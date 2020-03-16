@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
+//NOTICE: 'MyVisitor' is bad class name!
 public class MyVisitor extends SimpleFileVisitor<Path> {
     private final BufferedWriter writer;
 
