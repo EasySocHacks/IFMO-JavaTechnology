@@ -1,3 +1,4 @@
+package ru.ifmo.rain.elfimov.walk;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -6,11 +7,10 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
-//NOTICE: 'MyVisitor' is bad class name!
-public class MyVisitor extends SimpleFileVisitor<Path> {
+public class RecursiveFileVisitor extends SimpleFileVisitor<Path> {
     private final BufferedWriter writer;
 
-    MyVisitor(BufferedWriter writer) {
+    RecursiveFileVisitor(BufferedWriter writer) {
         this.writer = writer;
     }
 
